@@ -1,0 +1,9 @@
+go 1.18
+
+use (
+	./booking
+	./movie
+	./users
+	./showtimes
+	./website
+)
