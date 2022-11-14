@@ -15,5 +15,3 @@ nodes:
 - role: worker
 - role: worker
 - role: worker
-
-docker run -d  --name container-shell sample-shell 
