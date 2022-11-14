@@ -6,7 +6,7 @@ services:
       # - "--log.level=DEBUG"
       - "--api=true"
       - "--api.dashboard=true"
-      - "--api.insecure=true" # Don't do that in production
+      - "--api.insecure=true"
       - "--providers.docker"
       - "--entrypoints.web.address=:80"
       # add pilot token service
