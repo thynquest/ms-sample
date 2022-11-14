@@ -11,7 +11,8 @@ RUN go mod download && \
 # copy the source code as the last step
 COPY . .
 # build binary
-RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-w -s" -a -installsuffix cgo -o /go/bin/cinema-movies ./cmd/app
+#RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-w -s" -a -installsuffix cgo -o /go/bin/cinema-movies ./cmd/app
+RUN CGO_ENABLED=0  go build -ldflags="-w -s" -a -installsuffix cgo -o /go/bin/cinema-movies ./cmd/app
 
 
 # build a small image
